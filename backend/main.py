@@ -1,18 +1,21 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
 from PIL import Image
-from src.captioner import ImageCaptioner
+from .captioner import ImageCaptioner
 import io
+from pathlib import Path
 
 app = FastAPI()
 
-#  static file (frontend image up)
-app.mount("/static", StaticFiles(directory="backend/static"), name="static")
+BASE_DIR = Path(__file__).resolve().parent
+INDEX_PATH = BASE_DIR / "index.html"
+
+# Load captioner once at startup to avoid reloading the model per request.
+captioner = ImageCaptioner()
 
 @app.get("/")
 async def read_root():
-    return HTMLResponse(content=open("backend/index.html").read(), status_code=200)
+    return HTMLResponse(content=INDEX_PATH.read_text(), status_code=200)
 
 @app.post("/caption/")
 async def create_caption(file: UploadFile = File(...)):
@@ -21,7 +24,6 @@ async def create_caption(file: UploadFile = File(...)):
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
     
     # Generate caption
-    captioner = ImageCaptioner()
     caption = captioner.caption(image)
 
     return {"caption": caption}
