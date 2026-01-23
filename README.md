@@ -1,7 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -9,17 +7,16 @@
 [![project_license][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/17addisonlin/AI-Powered-Image-Captioning-System">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="image/caption.png" alt="Logo" width="200" height="200">
   </a>
 
-<h3 align="center">AI-Powered-Image-Captioning-System</h3>
+  <h3 align="center">AI-Powered-Image-Captioning-System</h3>
 
   <p align="center">
-    An AI-powered web app that generates image descriptions and social-ready captions from uploaded images.
+    Upload an image and get an AI-generated caption or a social-ready caption with tone, emojis, and hashtags.
     <br />
     <a href="https://github.com/17addisonlin/AI-Powered-Image-Captioning-System"><strong>Explore the docs »</strong></a>
     <br />
@@ -32,7 +29,6 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -40,6 +36,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#features">Features</a></li>
       </ul>
     </li>
     <li>
@@ -47,9 +44,12 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#running-locally">Running Locally</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#security--privacy-notes">Security & Privacy Notes</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -58,34 +58,40 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System)
 
-AI-Powered-Image-Captioning-System lets users upload an image and receive a caption describing the scene. It also includes a Social mode for generating a short, shareable caption with optional tone, emojis, and hashtags.
+This project is a lightweight web app that generates AI captions from uploaded images. It supports a standard caption mode and a social caption mode with tone, emojis, and hashtags.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [FastAPI](https://fastapi.tiangolo.com/)
-* [Transformers](https://huggingface.co/docs/transformers/index)
-* [PyTorch](https://pytorch.org/)
-* [Pillow](https://python-pillow.org/)
-* HTML/CSS/JavaScript
+* [![FastAPI][FastAPI-badge]][FastAPI-url]
+* [![PyTorch][PyTorch-badge]][PyTorch-url]
+* [![Transformers][Transformers-badge]][Transformers-url]
+* [![HTML5][HTML5-badge]][HTML5-url]
+* [![CSS3][CSS3-badge]][CSS3-url]
+* [![JavaScript][JavaScript-badge]][JavaScript-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-## Getting Started
+### Features
 
-To get a local copy up and running follow these steps.
+- Upload images and generate AI captions
+- Social caption mode with tone, emojis, and hashtags
+- Clean UI with preview and drag-and-drop upload
+- FastAPI backend with vision-language models
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Getting Started
 
 ### Prerequisites
 
-* Python 3.11 (recommended)
-* Conda or venv
+- Python 3.11 (recommended)
+- Conda or venv
 
 ### Installation
 
@@ -103,35 +109,53 @@ To get a local copy up and running follow these steps.
    ```sh
    pip install -r requirements.txt
    ```
-4. Run the server
+
+### Running Locally
+
+1. Start the server
    ```sh
    uvicorn backend.main:app --reload
    ```
-5. Open `http://127.0.0.1:8000`
+2. Open `http://127.0.0.1:8000`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-- Upload an image to generate a caption.
-- Switch to Social mode to generate a social caption with optional tone, emojis, and hashtags.
+1. Upload an image in Caption mode to get a short description.
+2. Switch to Social mode to generate a social-ready caption.
+3. Choose tone and toggle emojis/hashtags if desired.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
+## Troubleshooting
+
+- **Slow startup:** models download on first run; allow extra time.
+- **Dependency errors:** verify you are using the `captioning` environment.
+- **Blank caption:** try a different image or reduce image size.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Security & Privacy Notes
+
+- Images are processed locally by your server; nothing is uploaded unless you deploy it.
+- If you deploy publicly, add authentication and rate limiting.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Roadmap
 
 - [ ] Enhance UI
 - [ ] Add features
 - [ ] Add dark/white toggle background
 
+See the [open issues](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/issues) for a full list of proposed features and known issues.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcome. If you have improvements or bug fixes, please open an issue or submit a pull request.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -141,32 +165,29 @@ Contributions are what make the open source community such an amazing place to l
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 ## License
 
-MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTACT -->
 ## Contact
 
-Addison Lin  
-LinkedIn: https://www.linkedin.com/in/addison-lin-227
+Addison Lin - [LinkedIn](https://www.linkedin.com/in/addison-lin-227)
 
-Project Link: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System
+Project Link: [https://github.com/17addisonlin/AI-Powered-Image-Captioning-System](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)
+* [PyTorch](https://pytorch.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
 [contributors-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
@@ -179,4 +200,16 @@ Project Link: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System
 [license-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/addison-lin-227
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: image/caption demo.jpg
+[FastAPI-badge]: https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white
+[FastAPI-url]: https://fastapi.tiangolo.com/
+[PyTorch-badge]: https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white
+[PyTorch-url]: https://pytorch.org/
+[Transformers-badge]: https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000
+[Transformers-url]: https://huggingface.co/docs/transformers/index
+[HTML5-badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML5-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[CSS3-badge]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[CSS3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[JavaScript-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000
+[JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
