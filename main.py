@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.responses import HTMLResponse
 from PIL import Image
-from .captioner import ImageCaptioner, SocialCaptioner
+from captioner import ImageCaptioner, SocialCaptioner
 import io
 from pathlib import Path
 

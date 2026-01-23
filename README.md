@@ -1,11 +1,11 @@
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors](https://img.shields.io/github/contributors/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge)](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge)](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/network/members)
+[![Stargazers](https://img.shields.io/github/stars/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge)](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/stargazers)
+[![Issues](https://img.shields.io/github/issues/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge)](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/issues)
+[![MIT License](https://img.shields.io/github/license/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge)](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/blob/main/LICENSE)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/addison-lin-227)
 
 <br />
 <div align="center">
@@ -60,7 +60,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System)
+[![Product Name Screen Shot](image/caption%20demo.jpg)](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System)
 
 This project is a lightweight web app that generates AI captions from uploaded images. It supports a standard caption mode and a social caption mode with tone, emojis, and hashtags.
 
@@ -68,12 +68,12 @@ This project is a lightweight web app that generates AI captions from uploaded i
 
 ### Built With
 
-* [![FastAPI][FastAPI-badge]][FastAPI-url]
-* [![PyTorch][PyTorch-badge]][PyTorch-url]
-* [![Transformers][Transformers-badge]][Transformers-url]
-* [![HTML5][HTML5-badge]][HTML5-url]
-* [![CSS3][CSS3-badge]][CSS3-url]
-* [![JavaScript][JavaScript-badge]][JavaScript-url]
+* [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+* [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+* [![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/docs/transformers/index)
+* [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +114,7 @@ This project is a lightweight web app that generates AI captions from uploaded i
 
 1. Start the server
    ```sh
-   uvicorn backend.main:app --reload
+   uvicorn main:app --reload
    ```
 2. Open `http://127.0.0.1:8000`
 
@@ -186,30 +186,3 @@ Project Link: [https://github.com/17addisonlin/AI-Powered-Image-Captioning-Syste
 * [PyTorch](https://pytorch.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
-[contributors-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
-[forks-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/network/members
-[stars-shield]: https://img.shields.io/github/stars/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
-[stars-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/stargazers
-[issues-shield]: https://img.shields.io/github/issues/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
-[issues-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/issues
-[license-shield]: https://img.shields.io/github/license/17addisonlin/AI-Powered-Image-Captioning-System.svg?style=for-the-badge
-[license-url]: https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/addison-lin-227
-[product-screenshot]: image/caption demo.jpg
-[FastAPI-badge]: https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white
-[FastAPI-url]: https://fastapi.tiangolo.com/
-[PyTorch-badge]: https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white
-[PyTorch-url]: https://pytorch.org/
-[Transformers-badge]: https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000
-[Transformers-url]: https://huggingface.co/docs/transformers/index
-[HTML5-badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-[HTML5-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[CSS3-badge]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-[CSS3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[JavaScript-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000
-[JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
