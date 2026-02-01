@@ -151,7 +151,7 @@ This project is a lightweight web app that generates AI captions from uploaded i
 ## Roadmap
 
 - [ ] Enhance UI, deploy two tabs with its features
-- [ ] Add features
+- [ ] Add mutiple model support, try light and heavy model
 - [ ] Add dark/white toggle background
 
 See the [open issues](https://github.com/17addisonlin/AI-Powered-Image-Captioning-System/issues) for a full list of proposed features and known issues.
