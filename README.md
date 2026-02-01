@@ -150,7 +150,7 @@ This project is a lightweight web app that generates AI captions from uploaded i
 
 ## Roadmap
 
-- [ ] Enhance UI
+- [ ] Enhance UI, deploy two tabs with its features
 - [ ] Add features
 - [ ] Add dark/white toggle background
 
